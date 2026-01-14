@@ -83,13 +83,15 @@ int main() {
     Node* tail = createEmptyList();
 
     Product p1 = {1, "Keyboard", 25};
-    tail = insertAtBeginning(tail, p1);
-
     Product p2 = {2, "Mouse", 15};
-    tail = insertAtEnd(tail, p2);
-
     Product p3 = {3, "Monitor", 120};
-    tail = insertAtBeginning(tail, p3);
+    Product p4 = {4, "Monitor", 120};
+    
+    tail = insertAtEnd(tail, p3);
+    tail = insertAtBeginning(tail, p2);
+    tail = insertAtEnd(tail, p4);
+    tail = insertAtBeginning(tail, p1);
+ 
 
     displayProducts(tail);
 
